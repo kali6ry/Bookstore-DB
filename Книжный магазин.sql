@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3308
--- Время создания: Май 10 2023 г., 17:31
+-- Время создания: Декабрь 30 2024 г., 17:31
 -- Версия сервера: 8.0.30
 -- Версия PHP: 7.2.34
 
@@ -44,17 +44,17 @@ INSERT INTO `Authors` (`AuthorID`, `FirstName`, `LastName`, `MiddleName`) VALUES
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `Books`
+-- Структура таблицы `Книги`
 --
 
 CREATE TABLE `Books` (
-  `BookID` int NOT NULL,
-  `Title` varchar(255) DEFAULT NULL,
-  `AuthorID` int DEFAULT NULL,
-  `Publisher` varchar(255) DEFAULT NULL,
-  `PublicationYear` int DEFAULT NULL,
-  `Price` decimal(10,2) DEFAULT NULL,
-  `StockQuantity` int DEFAULT NULL
+  `Номер книги` int NOT NULL,
+  `Название` varchar(255) DEFAULT NULL,
+  `Автор` int DEFAULT NULL,
+  `Издательство` varchar(255) DEFAULT NULL,
+  `Год` int DEFAULT NULL,
+  `Цена` decimal(10,2) DEFAULT NULL,
+  `Кол-во книг` int DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
